@@ -73,6 +73,48 @@ a:hover {
     }
 }
 
+/* feature section  */
+.features {
+    padding: 50px 0;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.feature {
+    margin: 0 auto;
+    max-width: 300px;
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.icon {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 20px;
+    fill: #007bff; /* Change the icon color as needed */
+}
+
+.feature p {
+    font-size: 16px;
+    color: #666;
+}
+
+@media screen and (min-width: 768px) {
+    .features {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .feature {
+        width: 30%;
+        margin: 0;
+    }
+}
+
+
 
 
 /* hero section  */
