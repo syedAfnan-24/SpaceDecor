@@ -219,6 +219,41 @@ a:hover {
     padding: 20px;
 }
 
+.wrapper { 
+
+	/* Keeping the Text in the 
+	center of the Screen */
+	display: flex; 
+	justify-content: center; 
+} 
+
+.typewriter h3 { 
+	/* Content is not revealed 
+	until the animation */
+	overflow: hidden; 
+
+	/* Keeps the content on a single line */
+	white-space: nowrap; 
+
+	/* Gives that scrolling effect 
+	as the typing happens */
+	margin: 0 auto; 
+
+	/* Typing Effect Animation */
+	animation: typing 3.0s steps(30, end) 
+} 
+
+/* Typing Effect on Website Loading */
+@keyframes typing { 
+	from { 
+		width: 0
+	} 
+	to { 
+		width: 100%
+	} 
+}
+
+
 h1 {
     font-size: 2.5em;
     margin-bottom: 20px;
