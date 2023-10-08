@@ -98,6 +98,7 @@ a:hover {
   }
   .two{
     padding: 25px;
+    background-color: #f9f9f9;
   }
   .two h1 {
     text-transform: capitalize;
@@ -119,7 +120,7 @@ a:hover {
     letter-spacing: 4px;
     line-height: 3em;
     padding-left: 0.25em;
-    color: rgba(0, 0, 0, 0.4);
+    color: rgba(0, 0, 0, 0.523);
     padding-bottom: 10px;
   }
   .alt-two h1 {
