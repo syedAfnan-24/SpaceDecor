@@ -8,7 +8,7 @@
   body {
     height:100vh;
     background-color: #000;
-    background-image: url('https://images.unsplash.com/photo-1485470733090-0aae1788d5af?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1517&q=80');
+    background-image: url(images/hero.png);
     background-attachment: fixed;
     background-size: cover;
     background-position: center;
@@ -22,7 +22,7 @@ a{
     font-size: 1rem;
 }
 a:hover{
-    color: orange;
+    color: rgb(10, 213, 249);
 }
 
 /* header  */
@@ -57,7 +57,7 @@ header{
 }
 
 .action_btn{
-    background-color: orange;
+    background-color: rgb(10, 213, 249);
     color: #fff;
     padding: 0.5rem 1rem;
     border: none;
@@ -129,7 +129,7 @@ section#hero{
     border: 1px solid white;
 }
 #hero_btn:hover{
-    background-color: orange;
+    background-color: rgb(10, 213, 249);
 }
 /* dynammic typing */
 .typed-container{
