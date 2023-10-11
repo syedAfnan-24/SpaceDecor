@@ -2,65 +2,171 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
-        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <title>Space Decor and More</title>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- cnd for scrolling effect -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+  <!-- Font Awesome CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>Space Decor and More</title>
 </head>
 
 <body>
-    <header>
-        <div class="navbar">
-            <div class="logo"><a href="#">Space Decor <span style="font-size:medium;">and More</span></a></div>
-            <ul class="links">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-            <a href="#" class="action_btn">Get Quotation</a>
-            <div class="toggle_btn">
-                <i class="fa-solid fa-bars"></i>
+  <header>
+    <div class="navbar">
+      <div class="logo"><a href="#">Space Decor <span style="font-size:medium;">and More</span></a></div>
+      <ul class="links">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+      <a href="#" class="action_btn">Get Quotation</a>
+      <div class="toggle_btn">
+        <i class="fa-solid fa-bars"></i>
+      </div>
+    </div>
+    <div class="dropdown_menu">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Services</a></li>
+      <li><a href="#">Contact</a></li>
+      <li><a href="#" class="action_btn">Get Quotation</a></li>
+    </div>
+  </header>
+
+  <main>
+    <section id="hero">
+      <h1>Space Decor And More</h1>
+      <!-- <p>Lost in Space they choose Us!</p> -->
+      <div class="typed-container">
+        <p class="typed">Lost in Space they choose Us!</p>
+      </div>
+      <a href="#features"><button id="hero_btn">Get Started</button></a>
+    </section>
+
+    <!-- Features section -->
+    <section id="features" style="backdrop-filter: blur(50px);">
+      <div class="row">
+        <h1>Why Space Decor?</h1>
+      </div>
+      <div class="row">
+        <!-- Column One -->
+        <div class="column" data-aos="fade-up" data-aos-duration="15000">
+          <div class="card">
+            <div class="icon">
+              <i class="fa-solid fa-user"></i>
             </div>
+            <h3>Experienced Team</h3>
+            <p>
+              Crafting Inspirational Interiors with Our Expertise and Experienced Team, Elevating Every Space with
+              Style and Sophistication.
+            </p>
+          </div>
         </div>
-        <div class="dropdown_menu">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Contact</a></li>
-            <li><a href="#" class="action_btn">Get Quotation</a></li>
-        </div>
-    </header>
-
-    <main>
-        <section id="hero">
-            <h1>Space Decor And More</h1>
-            <!-- <p>Lost in Space they choose Us!</p> -->
-            <div class="typed-container">
-                <p class="typed">Lost in Space they choose Us!</p>
+        <!-- Column Two -->
+        <div class="column" data-aos="fade-up" data-aos-duration="15000">
+          <div class="card">
+            <div class="icon">
+              <i class="fa-solid fa-shield-halved"></i>
             </div>
-            <button id="hero_btn">Get Started</button>
-        </section>
-    </main>
+            <h3>Quality Assurance</h3>
+            <p>
+              Ensuring Excellence Through Rigorous Quality Assurance, Delivering Perfection in Every Detail of
+              Interior Design Experience.
+            </p>
+          </div>
+        </div>
+        <!-- Column Three -->
+        <div class="column" data-aos="fade-up" data-aos-duration="15000">
+          <div class="card">
+            <div class="icon">
+              <i class="fa-solid fa-headset"></i>
+            </div>
+            <h3>Reliability</h3>
+            <p>
+              Your Trusted Partner for Dependable Solutions, Reliability Redefined in Every Aspect of Interior Design
+              Brilliance.
+            </p>
+          </div>
+        </div>
 
-    <script>
-        const toggleBtn = document.querySelector('.toggle_btn')
-        const toggleBtnIcon = document.querySelector('.toggle_btn i')
-        const dropdownMenu = document.querySelector('.dropdown_menu')
+      </div>
+      <div class="row">
+        <!-- column four -->
+        <div class="column" data-aos="fade-up" data-aos-duration="15000">
+          <div class="card">
+            <div class="icon">
+              <i class="fa-solid fa-business-time"></i>
+            </div>
+            <h3>On Time</h3>
+            <p>
+              Punctual Precision, Delivering Dreams on Time. Timely Project Completion for Your Interior Vision
+              Realized with Precision and Commitment.
+            </p>
+          </div>
+        </div>
+        <!-- column five -->
+        <div class="column" data-aos="fade-up" data-aos-duration="15000">
+          <div class="card">
+            <div class="icon">
+              <i class="fa-solid fa-money-bill"></i>
+            </div>
+            <h3>Budget Friendly</h3>
+            <p>
+              Affordable Elegance, Transforming Spaces Within Your Budget. Budget-Friendly Designs, Uncompromised
+              Quality, Fulfilling Your Interior Dreams.
+            </p>
+          </div>
+        </div>
+        <!-- column Six -->
+        <div class="column" data-aos="fade-up" data-aos-duration="15000">
+          <div class="card">
+            <div class="icon">
+              <i class="fa-solid fa-compass-drafting"></i>
+            </div>
+            <h3>Craftsmanship Excellence</h3>
+            <p>
+              Exceptional Craftsmanship, Exemplifying Strength in Every Detail. Our Strong Work Ethic Transforms Visions
+              into Stunning Reality.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
 
-        toggleBtn.onclick = function(){
-            dropdownMenu.classList.toggle('open')
-            const isOpen = dropdownMenu.classList.contains('open')
+  <script>
+    const toggleBtn = document.querySelector('.toggle_btn')
+    const toggleBtnIcon = document.querySelector('.toggle_btn i')
+    const dropdownMenu = document.querySelector('.dropdown_menu')
 
-            toggleBtnIcon.classList=isOpen
-            ?'fa-solid fa-xmark'
-            : 'fa-solid fa-bars';
-        }
-    </script>
+    toggleBtn.onclick = function () {
+      dropdownMenu.classList.toggle('open')
+      const isOpen = dropdownMenu.classList.contains('open')
+
+      toggleBtnIcon.classList = isOpen
+        ? 'fa-solid fa-xmark'
+        : 'fa-solid fa-bars';
+    }
+  </script>
+
+  <!-- aos data scroll animations -->
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      offset: 300
+    });
+  </script>
 </body>
 
 </html>
